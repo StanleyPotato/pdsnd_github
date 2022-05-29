@@ -74,11 +74,11 @@ def load_data(city, month, day):
 
     x=5
     while True:
-        display_5_line= input('\nWould you like to view 5 rows of individual trip data? Enter yes or no.\n')
+        view_5_line= input('\nWould you like to view 5 rows of individual trip data? Enter yes or no.\n')
         display=df.head(x)
         print(display)
         x+=5
-        if display_5_line.lower() != 'yes':
+        if view_5_line.lower() != 'yes':
             break
 
     return df
